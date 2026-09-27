@@ -1,0 +1,204 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Main Wrapper */
+.login-wrapper {
+  width: 100%;
+  min-height: 100svh;
+
+  color: #f1f6fd;
+  font-family: "Asap", sans-serif;
+
+  background-color: #0c1116;
+}
+
+.login-wrapper,
+.login-wrapper * {
+  box-sizing: border-box;
+}
+
+/* Logo */
+.login-logo-container {
+  width: 100%;
+  padding: 40px 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-login {
+  width: 48px;
+}
+
+/* Login Container */
+.login-box-wrapper {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+/* Login Box */
+.login-box {
+  width: 364px;
+  min-height: 300px;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+
+  background-color: #161a23;
+  border-radius: 10px;
+}
+
+/* Form Label */
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+
+  color: #f1f6fd;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Input */
+.input {
+  width: 250px;
+  height: 35px;
+  padding: 0 1rem;
+
+  color: whitesmoke;
+  font-size: 1rem;
+
+  background-color: #0c1116;
+  border: 1px solid #f1f6fd;
+  border-radius: 5px;
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.2s ease;
+}
+
+.input:hover,
+.input:focus {
+  border-color: lightblue;
+}
+
+/* Buttons */
+.login-btn,
+.submit-btn,
+.signup-button {
+  width: 250px;
+}
+
+.submit-btn {
+  height: 35px;
+  padding: 0 1rem;
+
+  color: #f1f6fd;
+  font-weight: 700;
+
+  background-color: #238636;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #499458;
+}
+
+/* Error Message */
+.auth-error {
+  width: 250px;
+  margin: -10px 0;
+
+  color: #ff7b72;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Passkey Box */
+.passkey-signin {
+  width: 360px;
+  height: 90px;
+  margin: 10px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border: 1px solid #e6e9ed;
+  border-radius: 10px;
+}
+
+.passkey,
+.signup {
+  color: #2b7df7;
+  cursor: pointer;
+}
+
+/* Signup Box */
+.pass-box {
+  width: 364px;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 400px) {
+  .login-logo-container {
+    padding: 30px 0 20px;
+  }
+
+  .login-box,
+  .pass-box,
+  .passkey-signin {
+    width: calc(100% - 30px);
+  }
+
+  .input,
+  .login-btn,
+  .submit-btn,
+  .signup-button,
+  .auth-error {
+    width: 100%;
+  }
+
+  .login-box {
+    padding: 20px;
+  }
+}
